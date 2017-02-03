@@ -2,6 +2,7 @@
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 body{font-family: 'Roboto', sans-serif; font-weight:300; color:#5e6977}
+img{max-width:100%}
 header{padding:38px 0px; box-shadow:0 0 5px 2px #e8e8e8;}
 .logo{margin-top:}
 #navbar{margin-top:-10px}
@@ -11,6 +12,13 @@ header{padding:38px 0px; box-shadow:0 0 5px 2px #e8e8e8;}
 .container .jumbotron {background:none; padding-left:0; padding-right:0}
 .jumbotron h1{font-weight:300; font-size:52px; color:#43484d;; margin-bottom:30px}
 .jumbotron p.lead{font-size:22px; margin:0}
+.services{margin:50px 0px;}
+.service_container{display:table;}
+.service_icon,.service_text{display:table-cell; padding:10px; vertical-align:top}
+.service_icon{width:76px}
+.service_text{padding:10px 30px 10px 20px;}
+.service_text h2{font-size:18px; color:#43484d; margin-top:0; line-height:18px}
+.service_text p{font-size:16px; color:#86939e;}
 
 
 
