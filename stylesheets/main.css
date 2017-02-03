@@ -11,7 +11,7 @@ header{padding:38px 0px; box-shadow:0 0 5px 2px #e8e8e8;}
 .nav > li > a:hover{background:none; color:#000}
 .container .jumbotron {background:none; padding-left:0; padding-right:0}
 .jumbotron h1{font-weight:300; font-size:52px; color:#43484d;; margin-bottom:30px}
-.jumbotron p.lead{font-size:22px; margin:0}
+.jumbotron p.lead{font-size:22px; margin:0 52px;}
 .services{margin:50px 0px;}
 .service_container{display:table;}
 .service_icon,.service_text{display:table-cell; padding:10px; vertical-align:top}
@@ -19,9 +19,20 @@ header{padding:38px 0px; box-shadow:0 0 5px 2px #e8e8e8;}
 .service_text{padding:10px 30px 10px 20px;}
 .service_text h2{font-size:18px; color:#43484d; margin-top:0; line-height:18px}
 .service_text p{font-size:16px; color:#86939e;}
+.slider{min-height:395px; background:url(../images/bg_slider.jpg) no-repeat 0px bottom;}
+.learnmore a{color:#358ed7; position:relative; font-weight:500}
+.learnmore a:after{content:url(../images/icon_next.png);margin-left:10px; margin-top:1px; position:absolute}
+.slider .row{display:flex; min-height:440px; align-items:center}
+.my-slider{width:64%}
+.my-slider p{font-size:16px; font-weight:400; margin:20px 0px; color:#86939e}
+.my-slider h2{font-size:32px; font-weight:300}
+.slid-nav{list-style-type:none; margin:45px 0 0; padding:0}
+.slid-nav li{background:#e7e9ec; width:5px; height:5px; border-radius:50%; margin-right:10px; display:inline-block; cursor:pointer}
+.slid-nav li.active_item{background:#358ed7; border:5px solid #358ed7; }
+a.slide_navigation{width:40px; height:40px; background:url(../images/icon_navigation.png) no-repeat center; right:0; display:block;top: calc(50% - 20px); position:absolute; opacity:.7; transition:all .2s;}
+a.slide_navigation:hover{opacity:1}
 
-
-
+.intro_pricing{background:#f9f9f9;}
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
 only screen and ( min–moz-device-pixel-ratio: 2) and (min-width: 320px),
