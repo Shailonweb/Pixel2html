@@ -33,6 +33,28 @@ a.slide_navigation{width:40px; height:40px; background:url(../images/icon_naviga
 a.slide_navigation:hover{opacity:1}
 
 .intro_pricing{background:#f9f9f9;}
+
+.pricing_wrap{border-radius:10px; background:#fff; display:flex; flex-wrap:wrap; margin-bottom:-70px}
+.pricing{width:33%; padding:30px; text-align:center}
+.pricing h2{font-size:14px; margin:0; font-weight:500; color:#358ed7;text-transform:uppercase}
+.pricing h3{font-size:16px; font-weight:400; margin:0; color:#86939e; }
+.fee{color:#86939e; font-weight:400}
+#business h2,#business h3,#business .price,#business .description,#business .fee{color:#fff;}
+.pricing hr{background:#e1e8ee; border:none; height:1px; margin:30px 0px}
+#business hr{background:#61bdda}
+
+.price{font-size:52px; margin-top:20px; color:#43484d}
+.description{margin-top:30px; font-size:16px; color:#86939e;}
+.pricing_attr{list-style-type:none; font-weight:400}
+.pricing_attr li{text-align:left; margin-bottom:30px; position:relative;}
+.pricing_attr li:before{content:""; position:absolute; width:8px; height:15px; border-right:2px solid #86d35d; border-bottom:2px solid #86d35d; left:-30px; transform:rotate(48deg);}
+.pricing_attr li.inactive{color:#bfc7ce}
+.pricing_attr li.inactive:before{display:none}
+.btn_pricing{margin-top:40px; padding:10px; font-size:16px; color:#358ed7; background:none; border:2px solid #e1e8ee}
+#business{ width:34%;background:#39add1; color:#fff; border-bottom-right-radius:10px;border-top-right-radius:10px;}
+#business .btn_pricing{background:#7dc855; color:#fff; border:2px solid #7dc855; }
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
 only screen and ( min–moz-device-pixel-ratio: 2) and (min-width: 320px),
