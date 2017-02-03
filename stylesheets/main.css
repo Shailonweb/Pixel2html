@@ -7,6 +7,7 @@
     }
 body{font-family: 'Roboto', sans-serif; font-weight:300; color:#5e6977}
 img{max-width:100%}
+a:hover{text-decoration:none;}
 header{padding:38px 0px; box-shadow:0 0 5px 2px #e8e8e8;}
 .logo{margin-top:}
 #navbar{margin-top:-10px}
@@ -59,7 +60,7 @@ a.slide_navigation:hover{opacity:1}
 .btn_pricing{margin-top:40px; padding:10px; font-size:16px; color:#358ed7; background:none; border:2px solid #e1e8ee}
 #business{ width:34%;background:#39add1; color:#fff; border-bottom-right-radius:10px;border-top-right-radius:10px;}
 #business .btn_pricing{background:#7dc855; color:#fff; border:2px solid #7dc855; }
-.bottom{padding-top:170px; background:#5e6977; color:#fff}
+.bottom{padding-top:170px; background:#5e6977; color:#fff; padding-bottom:70px}
 .bottom h1{color:#fff}
 .bottom .jumbotron{margin-bottom:0}
 .bottom .jumbotron p.lead{opacity:.8}
@@ -67,6 +68,25 @@ a.slide_navigation:hover{opacity:1}
 .partners h2{font-size:18px; opacity:.6}
 .logo-partners{margin-top:5px;}
 .logo-partners img{margin:25px;}
+footer{background:#545e6b; padding:50px 0px; color:#fff;}
+.footer_desc{opacity:.6; font-size:16px; font-weight:400}
+footer h2{font-size:18px; margin:0}
+footer ul{list-style-type:none; margin:15px 0px; padding:0}
+footer ul li {margin-bottom:14px}
+footer ul li a{color:#fff; opacity:.6; font-size:16px;font-weight:400}
+footer ul li a:hover{opacity:1; color:#fff;}
+.menu_footer{width:33%; float:left; padding-bottom:20px}
+footer select{-webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
+   border:none;
+   background: url(../images/arrow-select.png) no-repeat right 10px center;
+   width:115px;
+   color:#babec2;
+   font-size:16px;
+   }
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
 only screen and ( min–moz-device-pixel-ratio: 2) and (min-width: 320px),
