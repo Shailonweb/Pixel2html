@@ -26,7 +26,7 @@ $(document).click(function(){
 }
 else
 {
-	window.resize(function(){
+	$(window).resize(function(){
 		
 		$(document).click(function(){
 	$('html').removeClass('killscroll');
@@ -36,4 +36,17 @@ else
 		});
 	
 }
+
+$(window).scroll(function(){ 
+    if ($(this).scrollTop() > 100) { 
+        $('#scrolltop').fadeIn(); 
+    } else { 
+        $('#scrolltop').fadeOut(); 
+    } 
+});
+$("#scrolltop").click(function(){
+	
+	  $("html, body").animate({ scrollTop: 0 }, 600); 
+    return false; 
+	});
 });	
