@@ -10,7 +10,7 @@ img{max-width:100%}
 a:hover{text-decoration:none;}
 header{padding:38px 0px; box-shadow:0 0 5px 2px #e8e8e8;}
 .logo{margin-top:}
-#navbar{margin-top:-10px}
+#navbar{margin-top:0px}
 .r-logo{display:none}
 .nav > li > a {color:#86939e; font-size:16px; font-weight:400; padding:0; margin: 0px 40px 0 0;}
 .nav > li > a:hover{background:none; color:#000}
@@ -64,7 +64,7 @@ a.slide_navigation:hover{opacity:1}
 .bottom h1{color:#fff}
 .bottom .jumbotron{margin-bottom:0}
 .bottom .jumbotron p.lead{opacity:.8}
-.bottom button{background:#7dc855; color:#fff; padding:15px 40px; margin-top:50px }
+.bottom button{background:#7dc855; color:#fff; padding:15px 40px; margin-top:50px; font-size:16px }
 .partners h2{font-size:18px; opacity:.6}
 .logo-partners{margin-top:5px;}
 .logo-partners img{margin:25px;}
@@ -86,6 +86,31 @@ footer select{-webkit-appearance: none;
    font-size:16px;
    }
 
+@media(max-width:1199px) and (min-width:992px){
+	.jumbotron h1 {font-size:42px}
+	.description{font-size:14px}
+}
+
+@media(max-width:992px) and (min-width:768px){
+	
+.container .jumbotron{width:100%; padding-bottom:15px; padding-top:24px;}
+.jumbotron h1 {font-size:42px}
+.jumbotron p.lead {font-size:21px;}	
+.my-slider {
+    width: 85%;
+}
+.slider {min-height:310px; background-size:420px}
+.slid-nav {margin: 15px 0 0;}
+.slider .row{min-height:inherit}
+.description{font-size:14px}
+.pricing_attr li {font-size:13px;margin-bottom: 22px;}
+footer select{width:75px; font-size:11px; background: url(../images/arrow-select.png) no-repeat right 0px center;}
+.footer_desc{font-size:14px;}
+footer h2 {font-size:16px}
+footer ul {marginm:14px 0px;}
+footer ul li {margin-bottom: 6px;}
+footer ul li a{font-size:14px;}
+}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
