@@ -24,7 +24,7 @@
   <div class="container">
   <div class="row">
   <div class="col-sm-2">
-  <div class="logo"><img src="images/logo.png" alt="Pixel2HTML" class="n-logo"><img src="images/logo-retina.png" alt="Pixel2HTML" class="r-logo"></div>
+  <div class="logo"><img src="images/logo.png" alt="Pixel2HTML" class="lg_device"><img src="images/logo-retina.png" alt="Pixel2HTML" class="retina_ready"></div>
   </div>
   <div class="col-sm-10">
   <div class="navbar-header">
@@ -98,10 +98,11 @@
 </div>
 </div>
 </section>
-<section class="slider">
+<section class="slider" style="background:url(images/bg_slider.jpg) no-repeat 0px bottom;">
+<img src="images/bg_slider.jpg">
 <div class="container">
 <div class="row">
-<div class="col-sm-6 col-sm-push-6">
+<div class="col-sm-6  col-sm-push-6">
 <div class="my-slider">
 <a class="slide_navigation" href=""></a>
    <div class="slider-wrap">
@@ -224,9 +225,10 @@
 </section>
 <footer>
 <div class="container">
-<div class="row">
+<div class="row footer_logo">
 <div class="col-md-1 col-sm-2">
-<img src="images/logo-footer.png" alt="">
+<img src="images/logo-footer.png" class="lg_device" alt="">
+<img src="images/logo-footer-retina.png" class="retina_ready" alt="">
 </div>
 <div class="col-sm-3 footer_desc">
 Huge modern UI Kit containing 130+ 
@@ -262,9 +264,10 @@ categories. Each component is fully.
 </ul>
 </div>
 </div>
-<div class="col-sm-2">
-<img src="images/icon-language.png" alt="">
-<select id="language">
+<div class="col-sm-2" id="language">
+<img src="images/icon-language.png" class="lg_device" alt="">
+<img src="images/icon-language-retina.png" class="retina_ready" alt="">
+<select>
 <option>English (UK)</option>
 </select>
 </div>
@@ -274,5 +277,7 @@ categories. Each component is fully.
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/jquery-ui.min.js"></script>
+    <script src="javascript/custom.js"></script>
   </body>
 </html>
