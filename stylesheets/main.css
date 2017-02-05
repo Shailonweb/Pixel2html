@@ -190,7 +190,7 @@ only screen and ( min-resolution: 2dppx) and (min-width: 320px) {
 		.retina_ready{display:inline-block;  height:auto}
 		.lg_device{display:none;}
 		.logo .retina_ready{width:78px;}
-		#language .retina_ready{width:15px;}
+		#language .retina_ready{width:15px; margin-top:-3px}
 		.footer_logo .retina_ready{width:78px}
  
 }
