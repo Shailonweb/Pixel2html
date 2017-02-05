@@ -109,7 +109,7 @@ footer select{-webkit-appearance: none;
     width: 85%;
 }
 
-.slider {min-height:310px; background-size:420px}
+.slider {min-height:310px; background-size:420px !important}
 .slid-nav {margin: 15px 0 0;}
 
 .slider .row{min-height:inherit}
