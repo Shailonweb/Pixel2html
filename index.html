@@ -9,8 +9,9 @@
 
     <!-- Bootstrap -->
     <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
-    
-    <link href="stylesheets/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/unslider.css">
+    <link rel="stylesheet" href="stylesheets/unslider-dots.css">
+	<link href="stylesheets/main.css" rel="stylesheet">
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -104,25 +105,17 @@
 <div class="row">
 <div class="col-sm-6  col-sm-push-6">
 <div class="my-slider">
-<a class="slide_navigation" href=""></a>
-   <div class="slider-wrap">
-    <div class="item active-box">
-      <h2>Powerful Extensions</h2>
+	<ul>
+		<li><h2>Powerful Extensions</h2>
       <p>This article is floated online with an aim to help you find the best dvd printing solution. Dvd printing is an important feature</p>
-      <p class="learnmore"><a href="#">Learn More</a></p>
-    </div>
-
-   </div>
- <!-- Indicators -->
-  <ol class="slid-nav">
-    <li class="active_item"></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
- 
+      <p class="learnmore"><a href="#">Learn More</a></p></li>
+<li><h2>Powerful Extensions</h2>
+      <p>This article is floated online with an aim to help you find the best dvd printing solution. Dvd printing is an important feature</p>
+      <p class="learnmore"><a href="#">Learn More</a></p></li>
+      <li><h2>Powerful Extensions</h2>
+      <p>This article is floated online with an aim to help you find the best dvd printing solution. Dvd printing is an important feature</p>
+      <p class="learnmore"><a href="#">Learn More</a></p></li>
+     </ul>
 </div>
 </div>
 </div>
@@ -277,10 +270,19 @@ categories. Each component is fully.
 <span class="glyphicon glyphicon-arrow-up">
 </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="javascript/unslider.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="javascript/bootstrap.min.js"></script>
     <script src="javascript/jquery-ui.min.js"></script>
     <script src="javascript/custom.js"></script>
+    <script>
+		jQuery(document).ready(function($) {
+			$('.my-slider').unslider({
+			infinite: true,
+});
+			
+		});
+	</script>
   </body>
 </html>

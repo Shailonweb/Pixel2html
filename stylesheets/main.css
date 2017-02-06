@@ -36,10 +36,14 @@ header{padding:38px 0px; box-shadow:0 0 5px 2px #e8e8e8; position:fixed; top:0; 
 .slider img{display:none;}
 .my-slider p{font-size:16px; font-weight:400; margin:20px 0px; color:#86939e}
 .my-slider h2{font-size:32px; font-family: 'Roboto-Light';}
-.slid-nav{list-style-type:none; margin:45px 0 0; padding:0}
-.slid-nav li{background:#e7e9ec; width:5px; height:5px; border-radius:50%; margin-right:10px; display:inline-block; cursor:pointer}
-.slid-nav li.active_item{background:#358ed7; border:5px solid #358ed7; }
-a.slide_navigation{width:40px; height:40px; background:url(../images/icon_navigation.png) no-repeat center; right:0; display:block;top: calc(50% - 20px); position:absolute; opacity:.7; transition:all .2s;}
+.unslider-nav{list-style-type:none; margin:45px 0 0; padding:0; text-align:left}
+.unslider-nav ol {text-align:left}
+.unslider-nav ol li{background:#e7e9ec; width:12px; border-radius:50%; height:12px; border:2px solid #fff; }
+.unslider-nav ol li.unslider-active{background:#358ed7; border:2px solid #358ed7;}
+
+.unslider-arrow.prev{display:none}
+
+a.unslider-arrow.next{text-indent:-999em;width:40px; height:40px; background:url(../images/icon_navigation.png) no-repeat center; right:0; display:block;top: calc(50% - 20px); position:absolute; opacity:.7; transition:all .2s;}
 a.slide_navigation:hover{opacity:1}
 
 .intro_pricing{background:#f9f9f9;}
@@ -94,10 +98,41 @@ footer select{-webkit-appearance: none;
     position: fixed;
     width: 100%;}
 #scrolltop{width:40px; height:40px; background:#eee; border-radius:50%; position:fixed; bottom:30px; right:30px; font-size:20px; padding-top:7px; text-align:center; cursor:pointer}
+
+
+.nav-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+  background:#e7e9ec;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.nav-dot.active_item{background:#358ed7;}
+.item {
+  position: absolute;
+  top: 10px;
+  opacity: 0;
+  overflow: visible;
+  visibility: hidden;
+  transition: opacity, 0.3s, ease;
+  padding-bottom: 10px;
+ font-family: $font-brand-lighter;
+}
+.slider-wrap{position:relative;}
+.active-box {
+  opacity: 1;
+  visibility: visible;
+  
+}
+
+.nav-dots{clear:both; margin-top:30px; position:absolute; bottom:0}
 @media(max-width:1199px) and (min-width:992px){
 	.jumbotron h1 {font-size:42px}
 	.description{font-size:14px}
 	footer select{width:110px; background: url(../images/arrow-select.png) no-repeat right 0px center;}
+	.unslider-nav{margin-top:10px}
 }
 
 @media(max-width:992px) and (min-width:768px){
@@ -121,6 +156,7 @@ footer h2 {font-size:16px}
 footer ul {marginm:14px 0px;}
 footer ul li {margin-bottom: 6px;}
 footer ul li a{font-size:14px;}
+.unslider-nav{margin-top:10px}
 }
 
 @media(max-width:767px){
@@ -162,7 +198,6 @@ footer ul li a{font-size:14px;}
 .slider{background:none !important;min-height:auto}
 .my-slider {
     width: 100%;
-	padding:0px 30px 30px;	
 }
 .slider img{display:block;}
 .slider .row {min-height:auto;}
@@ -179,6 +214,7 @@ footer ul li a{font-size:14px;}
 .menu_footer{float:none;}
 .footer_desc{margin:30px 0px}
 #language{position:absolute; top:65px; right:15px}
+.unslider-nav{margin-top:10px; margin-bottom:20px}
 }
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
