@@ -172,6 +172,8 @@ a.slide_navigation:hover {
     border-radius: 10px;
     background: #fff;
     float: left;
+	display:-webkit-flex;
+    display:-webkit-box;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: -135px
@@ -247,6 +249,7 @@ a.slide_navigation:hover {
     border-right: 2px solid #86d35d;
     border-bottom: 2px solid #86d35d;
     left: -30px;
+	-webkit-transform: rotate(48deg);
     transform: rotate(48deg);
 }
 .pricing_attr li.inactive {
@@ -410,6 +413,9 @@ footer select {
     margin-top: 30px;
     position: absolute;
     bottom: 0
+}
+#basic{
+	border-right:1px solid #F4F4F4;	
 }
 @media(max-width:1199px) and (min-width:992px) {
     .jumbotron h1 {
@@ -581,6 +587,10 @@ footer select {
         margin-top: 10px;
         margin-bottom: 20px
     }
+#basic{
+	border-right:none;	
+	border-bottom:1px solid #F4F4F4;	
+}
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
 only screen and ( min–moz-device-pixel-ratio: 2) and (min-width: 320px),
