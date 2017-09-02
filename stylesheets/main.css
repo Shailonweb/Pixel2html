@@ -107,8 +107,11 @@ header {
     position: absolute
 }
 .slider .row {
+	display:-webkit-flex;
+    display:-webkit-box;
     display: flex;
-    min-height: 440px;
+    height: 440px;
+	-webkit-box-align: center; /* align-items */
     align-items: center
 }
 .my-slider {
